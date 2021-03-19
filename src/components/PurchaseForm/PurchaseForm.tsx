@@ -67,8 +67,6 @@ const PurchaseForm = ({value, buyStatus, onChange}: PurchaseFormProps) => {
             userIds: listBuyers?.filter((item: UserInfoWithCheckbox) => item.checkbox === 1).map(item => item.id)})
     }, [listBuyers])
 
-    console.log(value)
-
     return (
         <div>
             <ul className = 'purchase-form__list'>
