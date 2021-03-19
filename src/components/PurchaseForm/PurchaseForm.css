@@ -1,0 +1,124 @@
+.purchase-form__list, .purchase-form__invitation-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.purchase-form__list > *, .purchase-form__invitation-list > * {
+    flex-basis: 100%;
+}
+.purchase-form__list li {
+    list-style: none;
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 5px 7px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.purchase-form__list-validation {
+    margin-top: 5px;
+    font-style: italic;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.purchase-form__list li:not(:last-child), .purchase-form__invitation-rules > label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.purchase-form__list li:hover {
+    border-color: green;
+}
+
+.purchase-form__list label p {
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+.purchase-form__list input[type = 'checkbox'] {
+    cursor: pointer;
+}
+
+.purchase-form__invitation-checkbox {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.purchase-form__invitation-checkbox:hover {
+    border-color: green;
+}
+
+.purchase-form__invitation-rules {
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.purchase-form__invitation-rules > label {
+    flex-basis: 100%;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.purchase-form__invitation-rules > label:hover span {
+    text-decoration: underline;
+}
+
+.purchase-form__invitation-rules > label input {
+    float: right;
+}
+
+
+.purchase-form__invitation-typing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.purchase-form__invitation-typing input {
+    flex-basis: 60%;
+    padding: 5px;
+}
+
+.purchase-form__invitation-typing button {
+    flex-basis: 30%;
+    margin-left: auto;
+}
+
+.purchase-form__list {
+    margin-top: 10px;
+}
+
+.purchase-form__invitation-list {
+    list-style: none;
+}
+
+.purchase-form__invitation-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purchase-form__invitation-list li span:last-of-type {
+    font-size: 30px;
+    line-height: 34px;
+    color: red;
+    cursor: pointer;
+    transition: transform ease .3s;
+}
+
+.purchase-form__invitation-list li span:last-of-type:hover {
+    transform: rotate(90deg);
+}
