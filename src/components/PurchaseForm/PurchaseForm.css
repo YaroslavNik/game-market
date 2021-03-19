@@ -95,6 +95,7 @@
 .purchase-form__invitation-typing button {
     flex-basis: 30%;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .purchase-form__list {
